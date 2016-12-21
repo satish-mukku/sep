@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='dist/vendor.bundle.js'></script>
+    <script src='dist/app.bundle.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <br />
+        <div ng-controller="packageCtrl as ctrl">
+            <h4>{{ctrl.name}}  {{'appTitle' | translate}}</h4>
+        </div>
+        <create-package></create-package>
+        <package-catalog></package-catalog>
+    </div>
+</body>
+
+</html>
