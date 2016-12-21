@@ -2,7 +2,7 @@ var gulp = require("gulp");
 var gutil = require("gulp-util");
 var webpack = require("webpack");
 var WebpackDevServer = require("webpack-dev-server");
-var webpackConfig = require("./webpack.config.js");
+var webpackConfig = process.env.NODE_ENV?require("./prod.webpack.config.js"):require("./dev.webpack.config.js");
 var environment = process.env.NODE_ENV ? process.env.NODE_ENV : 'development';
 var getPluginsForProduction = function () {
 	return [new webpack.optimize.DedupePlugin(),

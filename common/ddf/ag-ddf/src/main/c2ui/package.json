@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp build",
     "build-dist": "NODE_ENV='production' gulp build",
-    "start-dev": "gulp webpack-dev-server"
+    "start-dev": "gulp serve"
   },
   "keywords": [],
   "author": "smukku@innominds.com",
