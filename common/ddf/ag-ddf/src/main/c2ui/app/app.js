@@ -21,6 +21,8 @@
   // create angular module
   var module = angular.module('app', ['pascalprecht.translate'])
     .config(localeConfig)
+    
+    //load all the modules
     require('./package');
   module.exports = module;
 } ());
